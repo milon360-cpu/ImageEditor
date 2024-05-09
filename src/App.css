@@ -248,5 +248,14 @@ input[type=number] {
         height: auto;
         width: 100%;
     }
+    
+}
+@media screen and (max-width:450px) 
+{
+    .img-select button 
+    {
+        font-size: 25px;
+    }
 }
 /* Responsive Section End Here  */
+
