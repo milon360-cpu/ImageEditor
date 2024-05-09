@@ -1,0 +1,252 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.img-editor-container
+{
+    height: 100vh;
+    background-color: rgba(240, 248, 255, 0.285);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-editor
+{
+    height: 700px;
+    width: 900px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.144);
+    border-radius: 3px;
+    padding: 10px 0px;
+}
+.img-editor h1 
+{
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    letter-spacing: 5px;
+    color: rgb(21, 53, 122);
+}
+.img-controller
+{
+    display: flex;
+     padding: 10px 20px;
+    justify-content: space-between;
+}
+.filter 
+{ 
+    width: 50%;
+}
+
+.filter-btns
+{
+  text-align: center;
+  padding: 15px 10px;
+  box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.208);
+}
+.filter-btns button 
+{
+    margin: 10px 7px;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.157);
+    border-radius: 3px;
+    font-weight: 500;
+    color: rgb(21, 53, 122);
+    letter-spacing: 1px;
+    transition: .4s all;
+    text-transform: capitalize;
+
+}
+.filter-btns button:hover 
+{
+    background-color:#217BF9;
+    color: white;
+}
+.range-indicator
+{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-btns input 
+{
+    width: 100%;
+    
+}
+.edit-icon
+{
+    display: flex;
+}
+.edit-icon span 
+{
+    width: 40px;
+    height:40px;
+    margin: 5px 10px 5px 0px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.157);
+    border-radius: 3px;
+    font-size:18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(21, 53, 122);
+    cursor: pointer;
+    transition: .3s all;
+}
+.edit-icon span:hover 
+{
+    background-color: #217BF9;
+    color: white;
+}
+.reset-save-btn button 
+{
+    margin: 10px 7px;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.157);
+    border-radius: 3px;
+    font-weight: 500;
+    color: rgb(21, 53, 122);
+    letter-spacing: 1px;
+    transition: .4s all;
+}
+
+
+.active-btn 
+{
+    background-color:#217BF9 !important;
+    color: white !important;
+}
+
+
+
+
+
+/* Right Container Style Started Here  */
+.edit-img
+{
+    width: 48%;
+}
+.img-section
+{
+    height: 348px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.208);
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: rgb(21, 53, 122);
+    letter-spacing: 1px;
+    cursor: pointer;
+    flex-direction: column;
+    border: 2px dotted rgba(128, 128, 128, 0.246);
+}
+.img-section label 
+{
+    cursor: pointer;
+}
+.img-select
+{
+    display: flex;
+}
+.img-select button 
+{
+    width: 40px;
+    height:40px;
+    margin: 5px 10px 5px 0px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.157);
+    border-radius: 3px;
+    font-size:18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(21, 53, 122);
+    cursor: pointer;
+    transition: .3s all;
+}
+.img-select label 
+{
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.157);
+    border-radius: 3px;
+    font-weight: 500;
+    color: rgb(21, 53, 122);
+    letter-spacing: 1px;
+    transition: .4s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.img
+{
+    height: 348px;
+    overflow: hidden;
+}
+.img img 
+{
+    width: 100%;
+    height: 100%;
+    transition: .4s all;
+}
+.custom-size 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.custom-size h4 
+{
+   margin: 0px 20px;
+}
+.custom-size  input 
+{
+   height: 45px;
+}
+
+
+
+/* Responsive Section Started Here  */
+@media screen and (max-width:800px) 
+{
+    .img-editor-container
+    {
+        height: auto;
+    }
+    .img-controller
+    {
+        flex-direction: column;
+    }
+    .filter 
+    {
+        
+        width: 100%;
+    }
+    .edit-img 
+    {
+        width: 100%;
+    }
+    .img-editor
+    {
+        height: auto;
+        width: 100%;
+    }
+}
+/* Responsive Section End Here  */

@@ -1,0 +1,27 @@
+[
+    {
+        "name":"brightness",
+        "max" :200
+    },
+    {
+        "name":"grayScale",
+        "max" :200
+    },
+    {
+        "name":"sepia",
+        "max" :200
+    },
+    {
+        "name":"saturate",
+        "max" :200
+    },
+    {
+        "name":"contrast",
+        "max" :200
+    },
+    {
+        "name":"huerotate",
+        "max" :200
+    }
+
+]
